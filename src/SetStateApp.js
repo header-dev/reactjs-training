@@ -16,7 +16,10 @@ export default class SetStateApp extends Component {
 
     setStateHandler() {
 
-        var item = `React Programming`
+        var item = (
+            <li>React Programming</li>
+        )
+
         var myArray = this.state.data.slice()
 
         myArray.push(item)
@@ -33,7 +36,7 @@ export default class SetStateApp extends Component {
             <div>
                 <button onClick={this.setStateHandler}>Set Value</button>
                 <lu>
-                   State Array :  { this.state.data }
+                    {this.state.data}
                 </lu>
             </div>
         )
