@@ -11,10 +11,11 @@ import PropsApp from './PropsApp';
 import DefaultProps from './DefaultProps';
 import StateAndPropsApp from './StateAndPropsApp';
 import PropsValidationApp from './PropsValidationApp';
+import SetStateApp from './SetStateApp';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<PropsValidationApp />, document.getElementById('root'));
+ReactDOM.render(<SetStateApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
