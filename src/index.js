@@ -14,10 +14,11 @@ import PropsValidationApp from './PropsValidationApp';
 import SetStateApp from './SetStateApp';
 import SetStateApp2 from './SetStateApp2';
 import ForceUpdateStateApp from './ForceUpdateStateApp'
+import FindDomNodeApp from './FindDomNodeApp'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<ForceUpdateStateApp />, document.getElementById('root'));
+ReactDOM.render(<FindDomNodeApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
