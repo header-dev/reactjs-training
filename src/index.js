@@ -19,10 +19,12 @@ import FormApp from './FormApp'
 import CompactApp from './CompactApp'
 import HandleFormApp from './HandleFormApp'
 import EventApp from './EventApp'
+import RenderListApp from './RenderListApp'
+import RouterApp from './RouterApp'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<EventApp />, document.getElementById('root'));
+ReactDOM.render(<RouterApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
