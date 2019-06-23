@@ -16,8 +16,10 @@ export default class FindDomNodeApp extends Component {
     }
 
     findDomNodeHandler2(){
+        var i = 16
         var myDiv2 = document.getElementById('myDiv2')
-        ReactDOM.findDOMNode(myDiv2).style.color = 'green'
+        ReactDOM.findDOMNode(myDiv2).style.color = 'red'
+        ReactDOM.findDOMNode(myDiv2).style.fontSize = `${i++}px`;
     }
 
     render() {
