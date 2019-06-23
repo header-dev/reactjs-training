@@ -20,7 +20,7 @@ import CompactApp from './CompactApp'
 import HandleFormApp from './HandleFormApp'
 import EventApp from './EventApp'
 import RenderListApp from './RenderListApp'
-import MainRouteApp from './MainRouteApp'
+import HigherOrderApp from './HigherOrderApp'
 
 import * as serviceWorker from './serviceWorker';
 
@@ -57,14 +57,14 @@ const routing = (
                 </li>
             </ul>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
         </div>
     </Router>
 )
 
 
-ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(<HigherOrderApp/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
