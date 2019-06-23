@@ -20,11 +20,51 @@ import CompactApp from './CompactApp'
 import HandleFormApp from './HandleFormApp'
 import EventApp from './EventApp'
 import RenderListApp from './RenderListApp'
-import RouterApp from './RouterApp'
+import MainRouteApp from './MainRouteApp'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<RouterApp />, document.getElementById('root'));
+
+import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+
+import Home from './routes/Home'
+import About from './routes/About'
+import Contact from './routes/Contact'
+
+const routing = (
+    <Router>
+        <div>
+            <h1>Kritawit Bunket Training</h1>
+            <ul>
+                <li>
+                    <NavLink to="/" exact activeStyle={
+                        {color: 'red'}
+                    }>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about" exact activeStyle={
+                        {color: 'green'}
+                    }>
+                        About
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact" exact activeStyle={
+                        {color: 'magenta'}
+                    }>
+                        Contact
+                    </NavLink>
+                </li>
+            </ul>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+        </div>
+    </Router>
+)
+
+
+ReactDOM.render(routing, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
