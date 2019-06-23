@@ -1,0 +1,15 @@
+.mystyle {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.parastyle{
+    background-color: lightskyblue;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    text-align: center;
+}

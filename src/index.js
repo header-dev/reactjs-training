@@ -21,6 +21,12 @@ import HandleFormApp from './HandleFormApp'
 import EventApp from './EventApp'
 import RenderListApp from './RenderListApp'
 import HigherOrderApp from './HigherOrderApp'
+import RefApp from './RefApp'
+import KeyApp from './KeyApp'
+import InlineStyleApp from './InlineStyleApp'
+import JSObjStyleApp from './JSObjStyleApp'
+import CSSModuleApp from './CSSModuleApp'
+import StyleComponentApp from './StyleComponentApp'
 
 import * as serviceWorker from './serviceWorker';
 
@@ -64,7 +70,7 @@ const routing = (
 )
 
 
-ReactDOM.render(<HigherOrderApp/>, document.getElementById('root'));
+ReactDOM.render(<StyleComponentApp/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
