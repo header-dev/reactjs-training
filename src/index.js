@@ -17,10 +17,12 @@ import ForceUpdateStateApp from './ForceUpdateStateApp'
 import FindDomNodeApp from './FindDomNodeApp'
 import FormApp from './FormApp'
 import CompactApp from './CompactApp'
+import HandleFormApp from './HandleFormApp'
+import EventApp from './EventApp'
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<CompactApp />, document.getElementById('root'));
+ReactDOM.render(<EventApp />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
