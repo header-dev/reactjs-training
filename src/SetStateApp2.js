@@ -15,7 +15,8 @@ export default class SetStateApp2 extends Component {
 
     updateSetState() {
         this.setState({
-            msg: "React Programming Course !!!"
+            msg: "React Programming Course !!!",
+            value : "test"
         })
     }
 
@@ -24,6 +25,7 @@ export default class SetStateApp2 extends Component {
             <div>
                 <button onClick={this.updateSetState} >Update Set State</button>
                 <h2>{ this.state.msg }</h2>
+                <h2>{ this.state.value }</h2>
             </div>
         )
     }

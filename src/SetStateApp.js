@@ -27,8 +27,6 @@ export default class SetStateApp extends Component {
         this.setState({
             data : myArray
         })
-
-        
     }
 
     render() {
